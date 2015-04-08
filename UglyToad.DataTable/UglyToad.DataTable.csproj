@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E749C305-103B-4D69-9982-7370924B1D52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UglyToad.DataTable</RootNamespace>
+    <AssemblyName>UglyToad.DataTable</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\UglyToad.DataTable.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\UglyToad.DataTable.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\Resolver.cs" />
+    <Compile Include="Types\ColumnMapping.cs" />
+    <Compile Include="DataTableConverter.cs" />
+    <Compile Include="Types\DataTableParserSettings.cs" />
+    <Compile Include="ConversionManager.cs" />
+    <Compile Include="DataTypeConverter\DbNullConverter.cs" />
+    <Compile Include="DataTableResolver\DefaultDataTableResolver.cs" />
+    <Compile Include="DataTypeConverter\DefaultDataTypeConverter.cs" />
+    <Compile Include="Exceptions\InvalidMappingException.cs" />
+    <Compile Include="Factories\ObjectInstantiator.cs" />
+    <Compile Include="MappingResolvers\AttributeResolver.cs" />
+    <Compile Include="MappingResolvers\DefaultMappingResolver.cs" />
+    <Compile Include="DataTableResolver\DelegateDataTableResolver.cs" />
+    <Compile Include="Enums\EmptyInputHandling.cs" />
+    <Compile Include="Enums\MappingMatchOrder.cs" />
+    <Compile Include="Enums\MissingMappingHandling.cs" />
+    <Compile Include="Enums\NullInputHandling.cs" />
+    <Compile Include="Exceptions\DuplicateMappingException.cs" />
+    <Compile Include="Exceptions\MissingMappingException.cs" />
+    <Compile Include="Types\ExtendedPropertyInfo.cs" />
+    <Compile Include="Guard.cs" />
+    <Compile Include="DataTableResolver\IDataTableResolver.cs" />
+    <Compile Include="DataTypeConverter\IDataTypeConverter.cs" />
+    <Compile Include="MappingResolvers\IMappingResolver.cs" />
+    <Compile Include="MappingResolvers\PropertyResolver.cs" />
+    <Compile Include="DataTableResolver\ParallelDataTableResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
