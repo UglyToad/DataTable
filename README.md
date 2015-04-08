@@ -1,5 +1,6 @@
-# EliotJones.DataTable #
+# UglyToad.DataTable #
 
 ## Introduction ##
 
-This is a small class library mainly used for practice with Git and GitHub. The intended aim of the library is a small configurable ORM for mapping results in a DataTable to a collection of POCOs.
+This is a class library that adds a converter for mapping a DataTable, like those returned by a stored procedure,
+to a list of objects of the type requested by the user.
