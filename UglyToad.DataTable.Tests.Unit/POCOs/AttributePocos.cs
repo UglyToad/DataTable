@@ -23,6 +23,7 @@
 
     internal class ClassWithSomeAttributes
     {
+        [ColumnMapping("beehive_count")]
         [ColumnMapping(Name = "Beehive")]
         public int Count { get; set; }
 

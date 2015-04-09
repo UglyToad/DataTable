@@ -97,6 +97,34 @@
             Assert.Equal(owners, results.Select(r => r.Owner));
         }
 
+        [Fact]
+        public void Convert_AttributeOrPropertyName_MapCorrectly()
+        {
+            var dataTable = GetDataTableForClassWithSomeAttributes();
+
+            var resultsUsingAttribute = DataTableConverter.Convert<ClassWithSomeAttributes>(dataTable);
+
+            dataTable.Columns["Beehive"].ColumnName = "Count";
+
+            var resultsUsingProperty = DataTableConverter.Convert<ClassWithSomeAttributes>(dataTable);
+
+            Assert.Equal(resultsUsingAttribute.Select(r => r.Count), resultsUsingProperty.Select(r => r.Count));
+        }
+
+        [Fact]
+        public void Convert_TwoAttributes_MapCorrectly()
+        {
+            var dataTable = GetDataTableForClassWithSomeAttributes();
+
+            var resultsUsingAttribute = DataTableConverter.Convert<ClassWithSomeAttributes>(dataTable);
+
+            dataTable.Columns["Beehive"].ColumnName = "beehive_count";
+
+            var resultsUsingSecondAttribute = DataTableConverter.Convert<ClassWithSomeAttributes>(dataTable);
+
+            Assert.Equal(resultsUsingAttribute.Select(r => r.Count), resultsUsingSecondAttribute.Select(r => r.Count));
+        }
+
         private DataTable GetDataTableForClassWithSomeAttributes()
         {
             var dataTable = new DataTable();
