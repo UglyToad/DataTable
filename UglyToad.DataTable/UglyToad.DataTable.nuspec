@@ -8,6 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://github.com/UglyToad/DataTable/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/UglyToad/DataTable</projectUrl>
+	<iconUrl>https://raw.githubusercontent.com/UglyToad/DataTable/master/uglytoadsmall.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
   </metadata>
