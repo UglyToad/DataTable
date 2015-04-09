@@ -11,6 +11,7 @@
 	<iconUrl>https://raw.githubusercontent.com/UglyToad/DataTable/master/uglytoadsmall.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
+	<tags>DataTable Parse Convert DataSet</tags>
   </metadata>
 </package>
 
