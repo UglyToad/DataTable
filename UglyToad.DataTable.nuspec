@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>UglyToad.DataTable</id>
+    <version>1.1.0</version>
+    <title>UglyToad.DataTable</title>
+    <authors>UglyToad</authors>
+    <owners>UglyToad</owners>
+    <licenseUrl>https://github.com/UglyToad/DataTable/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/UglyToad/DataTable</projectUrl>
+	<iconUrl>https://raw.githubusercontent.com/UglyToad/DataTable/master/uglytoadsmall.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Convert DataTable to a list of object instances.</description>
+	<tags>DataTable Parse Convert DataSet ADO.Net</tags>
+  </metadata>
+  <files>
+		<file src="UglyToad.DataTable\bin\Release\UglyToad.DataTable.dll" target="lib\net45"/>
+		<file src="UglyToad.DataTable\bin\Release\UglyToad.DataTable.xml" target="lib\net45"/>
+		<file src="UglyToad.DataTable.Net40\bin\Release\UglyToad.DataTable.dll" target="lib\net40"/>
+		<file src="UglyToad.DataTable.Net40\bin\Release\UglyToad.DataTable.xml" target="lib\net40"/>
+		<file src="UglyToad.DataTable.Net35\bin\Release\UglyToad.DataTable.dll" target="lib\net35"/>
+		<file src="UglyToad.DataTable.Net35\bin\Release\UglyToad.DataTable.xml" target="lib\net35"/>
+	</files>
+</package>
+

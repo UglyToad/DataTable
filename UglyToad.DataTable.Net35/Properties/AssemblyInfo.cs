@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("UglyToad.DataTable")]
-[assembly: AssemblyDescription("Convert DataTable to list of object instances")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("UglyToad")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("UglyToad.DataTable")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,9 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c07ddb1a-9aaf-4e1e-a01e-d806c1df5043")]
-[assembly: InternalsVisibleTo("UglyToad.DataTable.Tests.Unit")]
-[assembly: InternalsVisibleTo("UglyToad.DataTable.Tests.Integration")]
+[assembly: Guid("0632ec0a-5dde-41bd-82e3-3e5116e33dd1")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,3 +34,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.1.0")]
 [assembly: AssemblyFileVersion("1.1.0")]
+
+[assembly: InternalsVisibleTo("UglyToad.DataTable.Net35.Tests.Unit")]

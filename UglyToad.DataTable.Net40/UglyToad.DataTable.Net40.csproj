@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UglyToad.DataTable</RootNamespace>
+    <AssemblyName>UglyToad.DataTable</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\UglyToad.DataTable.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\UglyToad.DataTable\ConversionManager.cs">
+      <Link>ConversionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTableConverter.cs">
+      <Link>DataTableConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTableResolver\DelegateDataTableResolver.cs">
+      <Link>DataTableResolver\DelegateDataTableResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTableResolver\IDataTableResolver.cs">
+      <Link>DataTableResolver\IDataTableResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTypeConverter\DbNullConverter.cs">
+      <Link>DataTypeConverter\DbNullConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTypeConverter\DefaultDataTypeConverter.cs">
+      <Link>DataTypeConverter\DefaultDataTypeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\DataTypeConverter\IDataTypeConverter.cs">
+      <Link>DataTypeConverter\IDataTypeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Enums\EmptyInputHandling.cs">
+      <Link>Enums\EmptyInputHandling.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Enums\MappingMatchOrder.cs">
+      <Link>Enums\MappingMatchOrder.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Enums\MissingMappingHandling.cs">
+      <Link>Enums\MissingMappingHandling.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Enums\NullInputHandling.cs">
+      <Link>Enums\NullInputHandling.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Enums\Resolver.cs">
+      <Link>Enums\Resolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Exceptions\DuplicateMappingException.cs">
+      <Link>Exceptions\DuplicateMappingException.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Exceptions\InvalidMappingException.cs">
+      <Link>Exceptions\InvalidMappingException.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Exceptions\MissingMappingException.cs">
+      <Link>Exceptions\MissingMappingException.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Factories\ObjectInstantiator.cs">
+      <Link>Factories\ObjectInstantiator.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Guard.cs">
+      <Link>Guard.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\MappingResolvers\AttributeResolver.cs">
+      <Link>MappingResolvers\AttributeResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\MappingResolvers\DefaultMappingResolver.cs">
+      <Link>MappingResolvers\DefaultMappingResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\MappingResolvers\IMappingResolver.cs">
+      <Link>MappingResolvers\IMappingResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\MappingResolvers\PropertyResolver.cs">
+      <Link>MappingResolvers\PropertyResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Types\ColumnMapping.cs">
+      <Link>Types\ColumnMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Types\DataTableParserSettings.cs">
+      <Link>Types\DataTableParserSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable\Types\ExtendedPropertyInfo.cs">
+      <Link>Types\ExtendedPropertyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DataTableResolver\DefaultDataTableResolver.cs" />
+    <Compile Include="DataTableResolver\ParallelDataTableResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

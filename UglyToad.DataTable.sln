@@ -26,6 +26,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		uglytoadsmall.png = uglytoadsmall.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.DataTable.Net35", "UglyToad.DataTable.Net35\UglyToad.DataTable.Net35.csproj", "{EF890972-8280-47F1-A6C2-32F7B0E75592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.DataTable.Net35.Tests.Unit", "UglyToad.DataTable.Net35.Tests.Unit\UglyToad.DataTable.Net35.Tests.Unit.csproj", "{631569FE-7CCE-4349-90CE-3D979F9DFA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.DataTable.Net40", "UglyToad.DataTable.Net40\UglyToad.DataTable.Net40.csproj", "{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UglyToad.DataTable.Net40.Tests.Unit", "UglyToad.DataTable.Net40.Tests.Unit\UglyToad.DataTable.Net40.Tests.Unit.csproj", "{FD5311D5-1619-4299-8E0D-32C41B15232F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +56,22 @@ Global
 		{148D5E85-CA51-41AA-BD8B-12FF2BB28119}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148D5E85-CA51-41AA-BD8B-12FF2BB28119}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148D5E85-CA51-41AA-BD8B-12FF2BB28119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF890972-8280-47F1-A6C2-32F7B0E75592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF890972-8280-47F1-A6C2-32F7B0E75592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF890972-8280-47F1-A6C2-32F7B0E75592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF890972-8280-47F1-A6C2-32F7B0E75592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631569FE-7CCE-4349-90CE-3D979F9DFA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631569FE-7CCE-4349-90CE-3D979F9DFA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631569FE-7CCE-4349-90CE-3D979F9DFA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631569FE-7CCE-4349-90CE-3D979F9DFA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA45FD6D-4B6F-4E43-B1A4-2F9605CD6046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5311D5-1619-4299-8E0D-32C41B15232F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5311D5-1619-4299-8E0D-32C41B15232F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5311D5-1619-4299-8E0D-32C41B15232F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5311D5-1619-4299-8E0D-32C41B15232F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +80,7 @@ Global
 		{DBDAFC94-E9AE-4C3A-9437-CD659737E5ED} = {D2352D42-B37E-45B0-9F49-1715A484B996}
 		{6D01BC25-24CB-4467-94B8-C7CD6521C7B4} = {D2352D42-B37E-45B0-9F49-1715A484B996}
 		{148D5E85-CA51-41AA-BD8B-12FF2BB28119} = {D2352D42-B37E-45B0-9F49-1715A484B996}
+		{631569FE-7CCE-4349-90CE-3D979F9DFA0A} = {D2352D42-B37E-45B0-9F49-1715A484B996}
+		{FD5311D5-1619-4299-8E0D-32C41B15232F} = {D2352D42-B37E-45B0-9F49-1715A484B996}
 	EndGlobalSection
 EndGlobal

@@ -1,1 +1,1 @@
-.\.nuget\NuGet.exe pack .\UglyToad.DataTable\UglyToad.DataTable.csproj -Prop Configuration=Release
+.\.nuget\NuGet.exe pack .\UglyToad.DataTable.nuspec

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD5311D5-1619-4299-8E0D-32C41B15232F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UglyToad.DataTable.Net40.Tests.Unit</RootNamespace>
+    <AssemblyName>UglyToad.DataTable.Net40.Tests.Unit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>d6cef82c</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FakeItEasy">
+      <HintPath>..\packages\FakeItEasy.1.25.2\lib\net40\FakeItEasy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\packages\xunit.1.9.2\lib\net20\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\packages\xunit.extensions.1.9.2\lib\net20\xunit.extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\UglyToad.DataTable.Net35.Tests.Unit\Tests\DataTypeConverters\DefaultDataTypeConverterTests.cs">
+      <Link>Tests\DataTypeConverters\DefaultDataTypeConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\Helpers\MappingHelper.cs">
+      <Link>Helpers\MappingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\POCOs\AttributePocos.cs">
+      <Link>POCOs\AttributePocos.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\POCOs\EncapsulatedPocos.cs">
+      <Link>POCOs\EncapsulatedPocos.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\POCOs\InheritancePocos.cs">
+      <Link>POCOs\InheritancePocos.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\POCOs\SimplePocos.cs">
+      <Link>POCOs\SimplePocos.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\TestStubs\TestDataTableResolver.cs">
+      <Link>TestStubs\TestDataTableResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\TestStubs\TestDataTypeConverter.cs">
+      <Link>TestStubs\TestDataTypeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\TestStubs\TestMappingResolver.cs">
+      <Link>TestStubs\TestMappingResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\Tests\ConversionManagerTests.cs">
+      <Link>Tests\ConversionManagerTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\Tests\DataTableConverterTests.cs">
+      <Link>Tests\DataTableConverterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UglyToad.DataTable.Tests.Unit\Tests\EncapsulatedClassesTests.cs">
+      <Link>Tests\EncapsulatedClassesTests.cs</Link>
+    </Compile>
+    <Compile Include="Factories\DataTableFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\DataTableResolvers\DefaultDataTableResolverTests.cs" />
+    <Compile Include="Tests\MappingResolvers\DefaultMappingResolverTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UglyToad.DataTable.Net40\UglyToad.DataTable.Net40.csproj">
+      <Project>{da45fd6d-4b6f-4e43-b1a4-2f9605cd6046}</Project>
+      <Name>UglyToad.DataTable.Net40</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

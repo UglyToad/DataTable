@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UglyToad.DataTable")]
-[assembly: AssemblyDescription("Convert DataTable to list of object instances")]
+[assembly: AssemblyTitle("UglyToad.DataTable.Net40.Tests.Unit")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("UglyToad")]
-[assembly: AssemblyProduct("UglyToad.DataTable")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("UglyToad.DataTable.Net40.Tests.Unit")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,9 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c07ddb1a-9aaf-4e1e-a01e-d806c1df5043")]
-[assembly: InternalsVisibleTo("UglyToad.DataTable.Tests.Unit")]
-[assembly: InternalsVisibleTo("UglyToad.DataTable.Tests.Integration")]
+[assembly: Guid("50ee095c-75e3-4ece-a081-842a2fc433da")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0")]
-[assembly: AssemblyFileVersion("1.1.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

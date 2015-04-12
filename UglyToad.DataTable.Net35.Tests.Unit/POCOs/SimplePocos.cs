@@ -1,4 +1,4 @@
-﻿namespace UglyToad.DataTable.Tests.Unit.POCOs
+﻿namespace UglyToad.DataTable.Net35.Tests.Unit.POCOs
 {
     internal class TwoIdProperties
     {

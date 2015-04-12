@@ -1,4 +1,4 @@
-﻿namespace UglyToad.DataTable.Tests.Unit.Tests
+﻿namespace UglyToad.DataTable.Net35.Tests.Unit.Tests
 {
     using System;
     using System.Data;
